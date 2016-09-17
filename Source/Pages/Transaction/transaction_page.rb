@@ -13,6 +13,10 @@ class TransactionPage < BasePage
     sleep 2
   end
 
+  def click_proceed_to_checkout_summary_btn
+    find_element_xpath_click "//div[@id='center_column']/p[2]/a/span"
+  end
+
   def click_proceed_to_checkout_address_btn
     find_element_name_click "processAddress"
   end
