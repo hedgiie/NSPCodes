@@ -230,16 +230,6 @@ class TestLogger
     log_message("note:| #{message}", MessageType::NOTE, severity)
   end
 
-  # Write a CJIMS specific notification note to the log.
-  # @param message [String] The message to be logged.
-  # @param severity [#Logger::Severity] The message severity.
-  #   This can be Logger::DEBUG, Logger::ERROR, Logger::FATAL, Logger::INFO, Logger::UNKNOWN, or Logger::WARN.
-  # @return [void]
-  def note_cjims(message, severity = Logger::UNKNOWN)
-    magenta_bright "note cjims: #{message}"
-    log_message("note cjims:| #{message}", MessageType::CJIMS, severity)
-  end
-
   # Close the log file and logger instance.
   # @return [void]
   def end_logging
