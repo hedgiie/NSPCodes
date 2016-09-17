@@ -65,7 +65,7 @@ class WebDriver
         base_output_folder = $config[ARGV[0]]['output_folder']
       end
 
-      create_directory("#{ENV['CAT']}#{base_output_folder}")
+      create_directory("#{ENV['FCTEST']}#{base_output_folder}")
 
       logging_directory = "#{ENV['FCTEST']}#{base_output_folder}Logs/"
       create_directory(logging_directory)
@@ -118,13 +118,4 @@ class WebDriver
       @accept_next_alert = true
     end
 
-    def s2
-      sleep 2
-    end
-    def s4
-      sleep 4
-    end
-    def s6
-      sleep 6
-    end
 end

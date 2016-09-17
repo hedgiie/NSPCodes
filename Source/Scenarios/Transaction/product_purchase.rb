@@ -48,39 +48,25 @@ class ProductPurchase
     $log.note "3. navigate to checkout page..."
     @@transaction_page.open_page "http://automationpractice.com/index.php?controller=order"
 
-    # $log.note "4. click \"proceed to checkout\" button | summary..."
-    # @@transaction_page.click_proceed_to_checkout_summary_btn
-    #
-    # $log.note "4. click \"proceed to checkout\" button | address..."
-    # @@transaction_page.click_proceed_to_checkout_address_btn
-    #
-    # $log.note "4. click \"proceed to checkout\" button | shipping..."
-    # @@transaction_page.click_terms_agreement_cb
-    # @@transaction_page.click_proceed_to_checkout_shipping_btn
-
   end
 
   def self.process_checkout_to_shipping
     sleep 2
-    $log.note "4. click \"proceed to checkout\" button | summary..."
+    $log.note "1. click \"proceed to checkout\" button | summary..."
     @@transaction_page.click_proceed_to_checkout_summary_btn
     sleep 2
-    $log.note "4. click \"proceed to checkout\" button | address..."
+    $log.note "2. click \"proceed to checkout\" button | address..."
     @@transaction_page.click_proceed_to_checkout_address_btn
     sleep 2
   end
 
   def self.process_checkout_to_payment
     sleep 2
-    $log.note "4. click \"proceed to checkout\" button | shipping..."
+    $log.note "click \"proceed to checkout\" button | shipping..."
     @@transaction_page.click_terms_agreement_cb
     @@transaction_page.click_proceed_to_checkout_shipping_btn
     sleep 2
   end
-
-  # $log.note "4. click \"proceed to checkout\" button | shipping..."
-  # @@transaction_page.click_terms_agreement_cb
-  # @@transaction_page.click_proceed_to_checkout_shipping_btn
 
   def self.fill_required_registration_info
     $log.note "** fill required registration info... **"
