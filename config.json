@@ -1,0 +1,8 @@
+{
+  "fincadtest": {
+    "target_browser": "chrome",
+    "host": "http://automationpractice.com/",
+    "data": "/Data/data.json",
+    "output_folder": "/Output_test/"
+  }
+}

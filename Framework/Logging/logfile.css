@@ -1,0 +1,21 @@
+div.success, div.fail, div.incomplete, div.note_unknown, div.note_fatal, div.note_error, div.note_warn, div.note_info, div.note_debug {font-family:"monospace";}
+div.success {color:green;}
+div.fail {color:red;}
+div.incomplete {color:orange;}
+div.note_fatal {font-weight:bold;color:red;}
+div.note_error {font-weight:bold;color:red;}
+div.note_warn {font-weight:bold;color:orange;}
+div.note_cjims {font-weight:bold;color:magenta;}
+div.note_info {font-weight:bold;color:black;}
+div.note_debug {font-weight:bold;color:black;}
+
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#bbb;margin:0px;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:4px 17px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#bbb;color:#594F4F;background-color:#E0FFEB;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:4px 17px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#bbb;color:#493F3F;background-color:#9DE0AD;border-top-width:1px;border-bottom-width:1px;}
+.tg .tg-pass{font-weight:bold;color:#036400}
+.tg .tg-percent{color:#010066}
+.tg .tg-header{font-weight:bold;color:#010066;text-align:center}
+.tg .tg-count{background-color:#C2FFD6;color:#010066}
+.tg .tg-failed{font-weight:bold;color:#cb0000}
+.tg .tg-so{font-weight:bold;color:#340095}
+.tg .tg-skip{font-weight:bold;color:#5E610B}

@@ -1,0 +1,30 @@
+{
+  "customer":{
+    "registration":{
+      "email_address":"test99@test.com",
+      "first_name":"firstnametset",
+      "last_name":"lastnametest",
+      "password":"99999",
+      "address":"1234 address",
+      "city":"citytest",
+      "state":"1",
+      "zip_postal_code":"12345",
+      "country":"canada",
+      "mobile_phone":"123451234"
+    }
+  },
+  "fincad_test":{
+    "asserts":{
+      "error_msg": {
+        "my_account":"MY ACCOUNT",
+        "missing_zip_postal_code":"The Zip/Postal code you've entered is invalid. It must follow this format: 00000"
+      },
+      "product_purchase": {
+        "blue_med_shirt_type":"Faded Short Sleeve T-shirts",
+        "blue_med_shirt_color_size":"Color : Blue, Size : M",
+        "total_price":"18.51",
+        "shipping_method_msg":"My carrier Delivery next day!"
+      }
+    }
+  }
+}
