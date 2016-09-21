@@ -21,7 +21,6 @@ class TcPurchasePrice < FinCadTest
     ProductPurchase.log_in
     ProductPurchase.select_product_item_to_checkout
     ProductPurchase.process_checkout_to_shipping
-    puts Registration.get_text
     assert_text_found $data['fincad_test']['asserts']['product_purchase']['shipping_method_msg'], Registration.get_text
     ProductPurchase.process_checkout_to_payment
     content =  Registration.get_text
